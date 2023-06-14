@@ -14,14 +14,8 @@
     height: 100%;
 }
 .spline {
-    background-color: #c4c4c4;
+    background-color: #868686;
     border-radius: 2px;
-}
-
-.loadingItem {
-    text-align: center;
-    font-size: 120px;
-    color: red;
 }
 
 .home {
@@ -70,9 +64,6 @@
         margin-bottom: 1rem;
     }
 }
-.summary {
-    background-color: aqua;
-}
 
 .creator {
     margin: 3rem 0;
@@ -86,4 +77,41 @@
     bottom: 9rem;
     left: 9rem;
 }
+.darkmodeSP {
+    display: none;
+}
 
+
+@media (max-width: 500px) {
+    .detail {
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        details {
+            margin-top: 1rem;
+        }
+        summary {
+            margin-bottom: 0;
+        }
+    }
+    .date {
+        margin-top: 6rem;
+    }
+    .links {
+        margin-bottom: -3rem;
+    }
+    .content {
+      z-index: -1;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .darkmode {
+        display: none;
+    }
+    .darkmodeSP {
+        display: contents;
+    }
+  }

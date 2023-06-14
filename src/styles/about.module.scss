@@ -37,4 +37,25 @@
     right: 0;
     width: 100%;
     height: 100%;
+    opacity: 0.8;
 }
+
+
+@media (max-width: 500px) {
+    .header {
+        margin-bottom: 9rem;
+        p {
+            margin-top: 1rem;
+        }
+    }
+    .container {
+      margin: 6rem 1rem;
+    }
+    .description {
+        width: 100%;
+    }
+    .darkmode {
+        bottom: 6rem;
+        left: 1rem;
+    }
+  }

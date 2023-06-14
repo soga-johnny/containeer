@@ -36,3 +36,15 @@
     align-items: right;
   }
   
+
+
+  @media (max-width: 500px) {
+    .container {
+      margin: 6rem 1rem;
+      width: 100%;
+    }
+    .darkmode {
+      bottom: 6rem;
+      left: 1rem;
+    }
+  }

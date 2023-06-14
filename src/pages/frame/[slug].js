@@ -7,6 +7,7 @@ import Spline from '@splinetool/react-spline'
 import Darkmode from '../../../components/Darkmode'
 import styles from '../../styles/slug.module.scss'
 import React, { Suspense } from 'react'
+import Loading from '../../../components/Loading'
 
 
 const render0ptions = {
@@ -16,49 +17,7 @@ const render0ptions = {
                 const Spline = React.lazy(() => import('@splinetool/react-spline'));
                 return (
                     <Suspense 
-                    fallback={<div>Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-                    Loading Loading Loading <br/>
-
-                    </div>}>
+                    fallback={<Loading />}>
                     <Spline 
                     scene={node.data.target.fields.url} 
                     className={styles.spline}/>
@@ -70,53 +29,14 @@ const render0ptions = {
 }
 
 export default function Frame ({ frame }) {
-    if(!frame ) return <div>                    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    Loading Loading Loading <br/>
-    </div>
+    if(!frame ) return <Loading />
 
 const { title, date, description, created, links, body } = frame.fields
 
 return (
     <div className={styles.container}>
           <div className={styles.detail}>
+            <div className={'p-3 bg-white dark:bg-black'}>
             <Link href="/"
             className={styles.home}>
               <div>
@@ -126,7 +46,7 @@ return (
             <details>
                 <summary>
                 </summary>
-                <p>{ date }</p>
+                <p className={styles.date}>{ date }</p>
                 <h2>{ title }</h2>
                 <p>{ description }</p>
                 <div className={styles.creator}>
@@ -137,9 +57,13 @@ return (
                     <p>Visit via</p>
                    - { documentToReactComponents(links) }
                 </div>
+                <div className={styles.darkmodeSP}>
+                <Darkmode />
+                </div>
             </details>
             <div className={styles.darkmode}>
             <Darkmode />
+            </div>
             </div>
         </div>
         <div className={styles.content}>
