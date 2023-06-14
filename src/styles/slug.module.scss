@@ -1,0 +1,86 @@
+.container {
+    margin-top: 9rem;
+    margin-left: 9rem;
+    width: 20%;
+    height: 100%
+}
+
+.content {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 12rem;
+    width: 50%;
+    height: 100%;
+}
+.spline {
+    background-color: #c4c4c4;
+    border-radius: 2px;
+}
+
+.loadingItem {
+    text-align: center;
+    font-size: 120px;
+    color: red;
+}
+
+.home {
+    text-decoration: none;
+    :hover {
+        text-decoration: underline;
+        // text-decoration-thickness: 0.5px;
+        text-underline-offset: 5px;
+    }
+}
+
+.detail {
+    details {
+        display: block;
+        margin-top: 6rem;
+        text-decoration: none;
+        :hover {
+            text-decoration: underline;
+            // text-decoration-thickness: 0.5px;
+            text-underline-offset: 5px;
+        }
+        p:hover {
+            text-decoration: none;
+        }
+        h2:hover {
+            text-decoration: none;
+        }
+    }
+    details > summary {
+        list-style-type: none;
+        cursor: pointer;
+    }
+    details > summary::-webkit-details-marker {
+        display: none;
+    }
+    details > summary:after {
+        content: "Open Description";
+    }
+    details[open] > summary:after {
+        content: "Close Description"
+    }
+    summary {
+        margin-bottom: 6rem;
+    }
+    h2 {
+        margin-bottom: 1rem;
+    }
+}
+.summary {
+    background-color: aqua;
+}
+
+.creator {
+    margin: 3rem 0;
+}
+
+.darkmode {
+    position: absolute;
+    bottom: 9rem;
+    left: 9rem;
+}
+

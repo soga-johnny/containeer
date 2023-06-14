@@ -1,0 +1,38 @@
+.container {
+    margin: 6rem 9rem;
+    width: 80%;
+}
+.darkmode {
+    position: absolute;
+    bottom: 9rem;
+    left: 9rem;
+}
+
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+  .slides::-webkit-scrollbar {
+    display: none;
+  }
+//   .slides::-webkit-scrollbar-thumb {
+//     background: black;
+//   }
+//   .slides::-webkit-scrollbar-track {
+//     background: transparent;
+//   }
+  .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    transform-origin: left center;
+    transform: scale(1);
+    transition: transform 0.1s;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+  }
+  

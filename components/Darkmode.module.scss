@@ -1,0 +1,18 @@
+.container {
+    margin-top: 9rem;
+    text-decoration: none;
+    :hover {
+        text-decoration: underline;
+        // text-decoration-thickness: 0.5px;
+        text-underline-offset: 5px;
+}
+}
+
+.dark {
+    margin-right: 0.5rem;
+}
+.light {
+    margin-left: 1rem;
+}
+
+

@@ -1,0 +1,22 @@
+.body {
+    margin: 0 3rem 3rem 0;
+}
+
+.thumbnail {
+    border-radius: 2px;
+    width: 450px;
+    height: auto;
+}
+
+.description {
+    margin-top: 3rem;
+}
+
+.btn {
+    text-decoration: none;
+    :hover {
+      text-decoration: underline;
+    //   text-decoration-thickness: 0.5px;
+      text-underline-offset: 5px;
+    }
+  }
