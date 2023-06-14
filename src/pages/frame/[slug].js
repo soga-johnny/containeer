@@ -6,20 +6,20 @@ import Link from 'next/link'
 import Spline from '@splinetool/react-spline'
 import Darkmode from '../../../components/Darkmode'
 import styles from '../../styles/slug.module.scss'
-import React, { Suspense } from 'react'
+// import React, { Suspense } from 'react'
 
 
 const render0ptions = {
     renderNode: {
         [BLOCKS.EMBEDDED_ENTRY]:( node ) => {
             if (node.data.target.sys.contentType.sys.id === "embedUrl") {
-                const Spline = React.lazy(() => import('@splinetool/react-spline'));
+                // const Spline = React.lazy(() => import('@splinetool/react-spline'));
                 return (
-                    <Suspense fallback={<div className={styles.loadingItem}>Loading</div>}>
+                    // <Suspense fallback={<div className={styles.loadingItem}>Loading</div>}>
                     <Spline 
                     scene={node.data.target.fields.url} 
                     className={styles.spline}/>
-                    </Suspense>
+                    // </Suspense>
                 )
             }
         }
@@ -48,11 +48,10 @@ return (
                 <p>{ description }</p>
                 <div className={styles.creator}>
                     <p>Created by</p>
-                    { created && created.fields.name}
+                    {/* { created && created.fields.name} */}
                 </div>
                 <div className={styles.links}>
                     <p>Visit via</p>
-                   - { documentToReactComponents(links) }
                 </div>
             </details>
             <div className={styles.darkmode}>
@@ -60,7 +59,7 @@ return (
             </div>
         </div>
         <div className={styles.content}>
-        {documentToReactComponents(body, render0ptions )}
+        {/* {documentToReactComponents(body, render0ptions )} */}
         </div>
     </div>
 )
