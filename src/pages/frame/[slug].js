@@ -29,7 +29,7 @@ const render0ptions = {
 export default function Frame ({ frame }) {
     // if(!frame ) return <Loading />
 
-const { title, date, description, created, links, body } = frame.fields
+const { title, date, description,  links, body } = frame.fields
 
 return (
     <div className={styles.container}>
