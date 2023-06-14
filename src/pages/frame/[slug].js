@@ -15,7 +15,50 @@ const render0ptions = {
             if (node.data.target.sys.contentType.sys.id === "embedUrl") {
                 const Spline = React.lazy(() => import('@splinetool/react-spline'));
                 return (
-                    <Suspense fallback={<div className={styles.loadingItem}>Loading</div>}>
+                    <Suspense 
+                    fallback={<div>Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+                    Loading Loading Loading <br/>
+
+                    </div>}>
                     <Spline 
                     scene={node.data.target.fields.url} 
                     className={styles.spline}/>
@@ -27,7 +70,47 @@ const render0ptions = {
 }
 
 export default function Frame ({ frame }) {
-    // if(!frame ) return <Loading />
+    if(!frame ) return <div>                    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    Loading Loading Loading <br/>
+    </div>
 
 const { title, date, description, created, links, body } = frame.fields
 
@@ -52,6 +135,7 @@ return (
                 </div>
                 <div className={styles.links}>
                     <p>Visit via</p>
+                   - { documentToReactComponents(links) }
                 </div>
             </details>
             <div className={styles.darkmode}>

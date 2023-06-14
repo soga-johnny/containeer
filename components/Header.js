@@ -18,6 +18,7 @@ export default function Header () {
           default: 
             src = '/logoDarkmode.png'
             break
+            
     }
 
     return (
