@@ -27,7 +27,8 @@ export default function About () {
   <div>
     <div className={styles.container}>
       <div className={styles.header}>
-      <Image src={ src } alt="logo" width={82} height={19.5} />
+      <Image src={ src } alt="logo" width={82} height={19.5} 
+      className={styles.logo}/>
       <h2>XR Inspiration Gallery</h2>
       <Link href="/"
       className={styles.home}

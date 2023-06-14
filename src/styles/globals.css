@@ -45,3 +45,10 @@ html,body {
 } */
 
 
+@media (max-width: 500px) {
+     *  {
+     font-size: 11px;
+    }
+    }
+
+

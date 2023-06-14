@@ -1,17 +1,17 @@
 .container {
-    margin: 6rem 9rem;
+    margin: 3rem 9rem;
     width: 80%;
 }
 .darkmode {
     position: absolute;
-    bottom: 9rem;
+    bottom: 6rem;
     left: 9rem;
 }
 
 .slides {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
   }
@@ -40,11 +40,11 @@
 
   @media (max-width: 500px) {
     .container {
-      margin: 6rem 1rem;
+      margin: 3rem 1rem;
       width: 100%;
     }
     .darkmode {
-      bottom: 6rem;
+      bottom: 3rem;
       left: 1rem;
     }
   }

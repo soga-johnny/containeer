@@ -17,7 +17,7 @@
 }
 
 .container {
-    margin: 6rem 9rem;
+    margin: 3rem 9rem;
     width: 80%;
 }
 .description {
@@ -43,19 +43,23 @@
 
 @media (max-width: 500px) {
     .header {
-        margin-bottom: 9rem;
+        margin-bottom: 12rem;
         p {
-            margin-top: 1rem;
+            margin-top: 1.5rem;
+        }
+        .logo {
+            width: 72px;
+            height: auto;
         }
     }
     .container {
-      margin: 6rem 1rem;
+      margin: 3rem 1rem;
     }
     .description {
         width: 100%;
     }
     .darkmode {
-        bottom: 6rem;
+        bottom: 3rem;
         left: 1rem;
     }
   }
