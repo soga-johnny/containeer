@@ -29,7 +29,7 @@ const render0ptions = {
 export default function Frame ({ frame }) {
     // if(!frame ) return <Loading />
 
-const { title, date, description,  links, body } = frame.fields
+const { title, date, description, created, links, body } = frame.fields
 
 return (
     <div className={styles.container}>
@@ -46,10 +46,10 @@ return (
                 <p>{ date }</p>
                 <h2>{ title }</h2>
                 <p>{ description }</p>
-                {/* <div className={styles.creator}>
+                <div className={styles.creator}>
                     <p>Created by</p>
                     { created && created.fields.name}
-                </div> */}
+                </div>
                 <div className={styles.links}>
                     <p>Visit via</p>
                    - { documentToReactComponents(links) }
