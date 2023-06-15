@@ -11,12 +11,13 @@ export default function Home ({ frame }) {
   return (
   <div>
     <Head>
-    <title>Containeer</title>
-      <meta name="description" content="Containeer is a inspiration gallery  utilizing XR.
+    <title>Containeer </title>
+    <link rel="canonical" href={`https://containeer.space`} />
+    <meta name="description" content="Containeer is a inspiration gallery  utilizing XR.
       We showcase Augmented reality, Virtual Reality, Mixed Reality, 
       and more interactive designs in the world." />
     </Head>
-    
+
     <div className={styles.container}>
        <Header />
        <div className={styles.slides}>

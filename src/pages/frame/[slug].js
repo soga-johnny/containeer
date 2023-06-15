@@ -1,4 +1,5 @@
 import client from '@/lib/contentful'
+import Head from 'next/head'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { BLOCKS } from '@contentful/rich-text-types'
 import Link from 'next/link'
@@ -30,10 +31,21 @@ const render0ptions = {
 export default function Frame ({ frame }) {
     if(!frame ) return <Loading />
 
-const { title, date, description, created, links, body } = frame.fields
+const { slug, title, date, description, created, links, thumbnail, body } = frame.fields
 
 return (
     <div className={styles.container}>
+      <Head>
+      <title>{ title } | Containeer </title>
+				<link rel="canonical" href={`https://containeer.space/frame/${ slug }`} />
+				<meta name="description" content={ description }></meta>
+				<meta property="og:title" content={`${ title } | Containeer `} />
+				<meta property="og:type" content="article" />
+				<meta property="og:url" content={`https://containeer.space/frame/${ slug }}`} />
+				<meta property="og:image" content={`https://images.ctfassets.net/${ thumbnail }}`} />
+				<meta property="og:site_name" content="Containeer" />
+				<meta property="og:description" content={ description } />
+      </Head>
           <div className={styles.detail}>
             <div className={'p-3 bg-white dark:bg-black'}>
             <Link href="/"

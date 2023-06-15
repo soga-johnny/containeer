@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/about.module.scss'
@@ -25,6 +26,13 @@ export default function About () {
 
   return (
   <div>
+    <Head>
+      <title>About | Containeer</title>
+      <link rel="canonical" href={`https://containeer.space/about`} />
+      <meta name="description" content="About Containeer" />
+      <meta property="og:image" content="https://containeer.space/ogp.jpg" />
+
+    </Head>
     <div className={styles.container}>
       <div className={styles.header}>
       <Image src={ src } alt="logo" width={82} height={19.5} 
