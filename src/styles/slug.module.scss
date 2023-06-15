@@ -14,7 +14,11 @@
     height: 100%;
 }
 .spline {
-    background-color: #868686;
+    // background-color: #868686;
+    background-image: url("../../public/loading.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% auto;
     border-radius: 2px;
 }
 
@@ -42,6 +46,16 @@
         }
         h2:hover {
             text-decoration: none;
+        }
+        .links:hover {
+            p {
+                text-decoration: none;
+            }
+        }
+        .creator:hover {
+            p {
+                text-decoration: none;
+            }
         }
     }
     details > summary {

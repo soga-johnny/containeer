@@ -1,7 +1,6 @@
 import client from '@/lib/contentful'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { BLOCKS } from '@contentful/rich-text-types'
-// import Loading from '../../../components/Loading'
 import Link from 'next/link'
 import Spline from '@splinetool/react-spline'
 import Darkmode from '../../../components/Darkmode'

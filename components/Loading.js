@@ -1,6 +1,6 @@
 export default function Loading () {
     return (
-    <div>
+    <div className={"bg-red-500"}>
     Loading Loading Loading <br/>
     Loading Loading Loading <br/>
     Loading Loading Loading <br/>
