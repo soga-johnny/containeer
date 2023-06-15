@@ -30,7 +30,12 @@ export default function About () {
       <title>About | Containeer</title>
       <link rel="canonical" href={`https://containeer.space/about`} />
       <meta name="description" content="About Containeer" />
+      <meta property="og:title" content="About | Containeer "/>
+		  <meta property="og:type" content="website" />
+		  <meta property="og:url" content="https://containeer.space/about"/>
       <meta property="og:image" content="https://containeer.space/ogp.jpg" />
+      <meta name="twitter:card" content="summary"/>
+      <meta property="twitter:site" content="@Containeer_" />
 
     </Head>
     <div className={styles.container}>

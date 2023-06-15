@@ -40,11 +40,13 @@ return (
 				<link rel="canonical" href={`https://containeer.space/frame/${ slug }`} />
 				<meta name="description" content={ description }></meta>
 				<meta property="og:title" content={`${ title } | Containeer `} />
-				<meta property="og:type" content="article" />
-				<meta property="og:url" content={`https://containeer.space/frame/${ slug }}`} />
-				<meta property="og:image" content={`https://images.ctfassets.net/${ thumbnail }}`} />
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content={`https://containeer.space/frame/${ slug }`} />
+				<meta property="og:image" content={`https://images.ctfassets.net/${ thumbnail }`} />
 				<meta property="og:site_name" content="Containeer" />
 				<meta property="og:description" content={ description } />
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:site" content="@Containeer_" />
       </Head>
           <div className={styles.detail}>
             <div className={'p-3 bg-white dark:bg-black'}>
