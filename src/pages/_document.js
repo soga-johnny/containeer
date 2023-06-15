@@ -5,17 +5,14 @@ export default function Document() {
   return (
     <Html lang="en" >  
      {/* <Html lang="en" suppressHydrationWarning>    */}
- 
       {/* <Head /> */}
       <Head>
-      {/* <title>Containeer</title> */}
-      <meta name="(description)" conent="XR contents gallery" />
+      <link rel="favicon" href="../../public/favicon.gif" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link 
       rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" 
       rel="stylesheet" />
-      {/* </link> */}
     </Head>
       <body>
         <Main />

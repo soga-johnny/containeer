@@ -25,7 +25,7 @@ export default function Header () {
       <header className={styles.header}>
           <Image src={ src } alt="logo" width={82} height={19.5} 
           className={styles.logo}/>
-          <h2>XR Inspiration Gallery</h2>
+          <h1>XR Inspiration Gallery</h1>
         <Link href="/about" className={styles.btn}><p>About</p></Link>
       </header>
     )
