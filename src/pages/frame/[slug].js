@@ -42,7 +42,7 @@ return (
 				<meta property="og:title" content={`${ title } | Containeer `} />
 				<meta property="og:type" content="website" />
 				<meta property="og:url" content={`https://containeer.space/frame/${ slug }`} />
-				<meta property="og:image" content={`https://images.ctfassets.net/${ thumbnail }`} />
+				<meta property="og:image" content={ thumbnail } />
 				<meta property="og:site_name" content="Containeer" />
 				<meta property="og:description" content={ description } />
         <meta name="twitter:card" content="summary_large_image"/>
